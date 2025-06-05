@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 19 | Scripts: 3 | Modules: 0 | Tags: 0
+-- Instances: 29 | Scripts: 5 | Modules: 1 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Log Admin
@@ -45,8 +45,9 @@ G2L["4"]["TextSize"] = 15;
 G2L["4"]["TextColor3"] = Color3.fromRGB(179, 179, 179);
 G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["4"]["PlaceholderText"] = [[Log Admin V0.1.8 ;cmds for command list]];
-G2L["4"]["Size"] = UDim2.new(0, 437, 0, 26);
+G2L["4"]["PlaceholderText"] = [[Log Admin V0.2.1  ;cmds for command list]];
+G2L["4"]["Size"] = UDim2.new(0, 367, 0, 26);
+G2L["4"]["Position"] = UDim2.new(-0, 0, 0, 0);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Text"] = [[]];
 G2L["4"]["BackgroundTransparency"] = 1;
@@ -152,37 +153,177 @@ G2L["10"] = Instance.new("LocalScript", G2L["a"]);
 G2L["10"]["Name"] = [[ButtonScritpssss]];
 
 
+-- StarterGui.Log Admin.Main.SettingsButton
+G2L["11"] = Instance.new("ImageButton", G2L["2"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["ScaleType"] = Enum.ScaleType.Crop;
+G2L["11"]["BackgroundTransparency"] = 1;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Image"] = [[rbxassetid://10734950309]];
+G2L["11"]["Size"] = UDim2.new(0, 21, 0, 17);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Name"] = [[SettingsButton]];
+G2L["11"]["Position"] = UDim2.new(0.97574, 0, 0.15385, 0);
+
+
+-- StarterGui.Log Admin.Main.SettingsButton.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["11"]);
+
+
+
 -- StarterGui.Log Admin.Remotes
-G2L["11"] = Instance.new("Folder", G2L["1"]);
-G2L["11"]["Name"] = [[Remotes]];
+G2L["13"] = Instance.new("Folder", G2L["1"]);
+G2L["13"]["Name"] = [[Remotes]];
 
 
 -- StarterGui.Log Admin.Remotes.REevent
-G2L["12"] = Instance.new("RemoteEvent", G2L["11"]);
-G2L["12"]["Name"] = [[REevent]];
+G2L["14"] = Instance.new("RemoteEvent", G2L["13"]);
+G2L["14"]["Name"] = [[REevent]];
 
 
 -- StarterGui.Log Admin.Remotes.RemoteHandler
-G2L["13"] = Instance.new("Script", G2L["11"]);
-G2L["13"]["Name"] = [[RemoteHandler]];
+G2L["15"] = Instance.new("Script", G2L["13"]);
+G2L["15"]["Name"] = [[RemoteHandler]];
 
 
+-- StarterGui.Log Admin.Modules
+G2L["16"] = Instance.new("Folder", G2L["1"]);
+G2L["16"]["Name"] = [[Modules]];
+
+
+-- StarterGui.Log Admin.Modules.FatScript
+G2L["17"] = Instance.new("ModuleScript", G2L["16"]);
+G2L["17"]["Name"] = [[FatScript]];
+
+
+-- StarterGui.Log Admin.Notif2
+G2L["18"] = Instance.new("Frame", G2L["1"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["Size"] = UDim2.new(0, 316, 0, 170);
+G2L["18"]["Position"] = UDim2.new(0.01153, 0, 0.56723, 0);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Name"] = [[Notif2]];
+G2L["18"]["BackgroundTransparency"] = 0.35;
+
+
+-- StarterGui.Log Admin.Notif2.UIGradient
+G2L["19"] = Instance.new("UIGradient", G2L["18"]);
+G2L["19"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(22, 22, 22)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(27, 27, 27))};
+
+
+-- StarterGui.Log Admin.Notif2.TextLabel
+G2L["1a"] = Instance.new("TextLabel", G2L["18"]);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 24;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(162, 248, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1a"]["TextColor3"] = Color3.fromRGB(162, 248, 255);
+G2L["1a"]["BackgroundTransparency"] = 1;
+G2L["1a"]["Size"] = UDim2.new(0, 306, 0, 25);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[Thank you for using Log Admin!]];
+G2L["1a"]["Position"] = UDim2.new(0.01266, 0, 0, 0);
+
+
+-- StarterGui.Log Admin.Notif2.TextButton
+G2L["1b"] = Instance.new("TextButton", G2L["18"]);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(187, 187, 187);
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(92, 92, 92);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1b"]["BackgroundTransparency"] = 0.5;
+G2L["1b"]["Size"] = UDim2.new(0, 278, 0, 21);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[Close]];
+G2L["1b"]["Position"] = UDim2.new(0.05994, 0, 0.78148, 0);
+
+
+-- StarterGui.Log Admin.Notif2.TextButton.LocalScript
+G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
+
+
+
+-- StarterGui.Log Admin.Notif2.TextLabel
+G2L["1d"] = Instance.new("TextLabel", G2L["18"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1d"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1d"]["TextColor3"] = Color3.fromRGB(162, 248, 255);
+G2L["1d"]["BackgroundTransparency"] = 1;
+G2L["1d"]["Size"] = UDim2.new(0, 276, 0, 87);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[This is made by loudharp and 2 c00lkidds. This was meant to be private but i didn't know what i was gonna do with it. So now its public!]];
+G2L["1d"]["Position"] = UDim2.new(0.05677, 0, 0.26492, 0);
+
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+G2L_MODULES[G2L["17"]] = {
+Closure = function()
+    local script = G2L["17"];local fat = {}
+
+function fat:SendNotif(title, desc, durat)
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = title,
+		Text = desc,
+		Duration = durat
+	})
+end
+
+function fat:SendNotifBut(title, desc, durat, button1, button2, callback)
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = title,
+		Text = desc,
+		Duration = durat,
+		callback = callback,
+		Button1 = button1,
+		Button2 = button2
+	})
+end
+
+return fat
+
+end;
+};
 -- StarterGui.Log Admin.Main.TextBox.AwfulFiltering
 local function C_5()
 local script = G2L["5"];
 	local TweenService = game:GetService("TweenService")
 	local Players = game:GetService("Players")
+	local HttpService = game:GetService("HttpService")
+	local TeleportService = game:GetService("TeleportService")
 	local UserInputService = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
-	
 	local player = Players.LocalPlayer
 	local textBox = script.Parent
 	local frame = script.Parent.Parent:WaitForChild("CommandFrame")
-	
 	local flying = false
 	local flyControl = {F=0, B=0, L=0, R=0, U=0, D=0}
 	local bv, bg
 	local flyConnection, collisionConnection
+	
+	PlaceId, JobId = game.PlaceId, game.JobId
+	
 	
 	if not textBox or not frame then
 		warn("Missing TextBox or Frame!")
@@ -369,7 +510,7 @@ local script = G2L["5"];
 	
 			local character = player.Character or player.CharacterAdded:Wait()
 			local hrp = character:WaitForChild("HumanoidRootPart")
-			respawnEvent:FireServer(hrp.Position)
+			game:GetService("Players").LocalPlayer.Character.Humanoid.Health=0
 		end,
 	
 		["fly"] = function(args)
@@ -859,7 +1000,7 @@ local script = G2L["5"];
 				local bodyVelocity = Instance.new("BodyVelocity")
 				bodyVelocity.Velocity = hrp.CFrame.LookVector * 10 + Vector3.new(0, -20, 0)
 				bodyVelocity.MaxForce = Vector3.new(1e5, 1e5, 1e5)
-				bodyVelocity.P = 500
+				bodyVelocity.P = 9999
 				bodyVelocity.Name = "TripForce"
 				bodyVelocity.Parent = hrp
 	
@@ -1005,45 +1146,65 @@ local script = G2L["5"];
 			root.CFrame = targetRoot.CFrame + Vector3.new(2, 0, 0) -- slight offset to avoid overlap
 		end,
 		["headsit"] = function(args)
-			local targetName = args[2]
-			if not targetName then
+			local playerName = args[2]
+			if not playerName then
 				warn("Please provide a player name.")
 				return
 			end
 	
-			local player = game.Players.LocalPlayer
-			local char = player.Character or player.CharacterAdded:Wait()
+			local Players = game:GetService("Players")
+			local RunService = game:GetService("RunService")
+			local localPlayer = Players.LocalPlayer
+			local char = localPlayer.Character or localPlayer.CharacterAdded:Wait()
 			local hrp = char:WaitForChild("HumanoidRootPart")
 	
+			-- Find the target player
 			local targetPlayer = nil
-			for _, p in pairs(game.Players:GetPlayers()) do
-				if p.Name:lower():sub(1, #targetName) == targetName:lower() then
+			for _, p in pairs(Players:GetPlayers()) do
+				if p.Name:lower():sub(1, #playerName) == playerName:lower() then
 					targetPlayer = p
 					break
 				end
 			end
 	
-			if not targetPlayer or targetPlayer == player then
+			if not targetPlayer or targetPlayer == localPlayer then
 				warn("Target not found or is yourself.")
 				return
 			end
 	
-			local targetChar = targetPlayer.Character
-			if not targetChar then
-				warn("Target has no character.")
-				return
+			local function startSpinLoop()
+				local bodyGyro = hrp:FindFirstChild("SpinGyro")
+				if not bodyGyro then
+					bodyGyro = Instance.new("BodyGyro")
+					bodyGyro.Name = "SpinGyro"
+					bodyGyro.MaxTorque = Vector3.new(0, math.huge, 0)
+					bodyGyro.P = 999999999999
+					bodyGyro.D = 0
+					bodyGyro.CFrame = hrp.CFrame
+					bodyGyro.Parent = hrp
+				end
+	
+				-- Loop spinning while target is still valid
+				task.spawn(function()
+					while targetPlayer.Parent and targetPlayer.Character and targetPlayer.Character:FindFirstChild("Head") do
+						local targetHead = targetPlayer.Character.Head
+						-- Stay above their head
+						hrp.CFrame = targetHead.CFrame * CFrame.new(0, 3, 0)
+						-- Spin
+						bodyGyro.CFrame *= CFrame.Angles(0, math.rad(10), 0)
+						RunService.Heartbeat:Wait()
+					end
+	
+					-- Clean up when target leaves
+					if bodyGyro and bodyGyro.Parent then
+						bodyGyro:Destroy()
+					end
+				end)
 			end
 	
-			local head = targetChar:FindFirstChild("Head")
-			if not head then
-				warn("Target has no head.")
-				return
-			end
+			startSpinLoop()
 	
-			-- Position your character above their head
-			hrp.CFrame = head.CFrame * CFrame.new(0, 1.5, 0)
-	
-			-- Optional: force sit animation
+			-- Optional: Sit your character
 			local humanoid = char:FindFirstChildOfClass("Humanoid")
 			if humanoid then
 				humanoid.Sit = true
@@ -1074,8 +1235,254 @@ local script = G2L["5"];
 	
 			TeleportService:TeleportToPlaceInstance(placeId, jobId, player)
 		end,
+		
+		["kick"] = function(args)
+			local playerName = args[2]
+			if not playerName then
+				warn("Please provide a player name.")
+				return
+			end
 	
+			local Players = game:GetService("Players")
+			local RunService = game:GetService("RunService")
+			local localPlayer = Players.LocalPlayer
+			local char = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+			local hrp = char:WaitForChild("HumanoidRootPart")
 	
+			-- Find the target player
+			local targetPlayer = nil
+			for _, p in pairs(Players:GetPlayers()) do
+				if p.Name:lower():sub(1, #playerName) == playerName:lower() then
+					targetPlayer = p
+					break
+				end
+			end
+	
+			if not targetPlayer or targetPlayer == localPlayer then
+				warn("Target not found or is yourself.")
+				return
+			end
+	
+			local function startSpinLoop()
+				local bodyGyro = hrp:FindFirstChild("SpinGyro")
+				if not bodyGyro then
+					bodyGyro = Instance.new("BodyGyro")
+					bodyGyro.Name = "SpinGyro"
+					bodyGyro.MaxTorque = Vector3.new(0, math.huge, 0)
+					bodyGyro.P = 999999999999
+					bodyGyro.D = 0
+					bodyGyro.CFrame = hrp.CFrame
+					bodyGyro.Parent = hrp
+				end
+	
+				-- Loop spinning while target is still valid
+				task.spawn(function()
+					while targetPlayer.Parent and targetPlayer.Character and targetPlayer.Character:FindFirstChild("Head") do
+						local targetHead = targetPlayer.Character.Head
+						-- Stay above their head
+						hrp.CFrame = targetHead.CFrame * CFrame.new(0, 3, 0)
+						-- Spin
+						bodyGyro.CFrame *= CFrame.Angles(0, math.rad(10), 0)
+						RunService.Heartbeat:Wait()
+					end
+	
+					-- Clean up when target leaves
+					if bodyGyro and bodyGyro.Parent then
+						bodyGyro:Destroy()
+					end
+				end)
+			end
+	
+			startSpinLoop()
+		end,
+		["kill"] = function(args)
+			local playerName = args[2]
+			if not playerName then
+				warn("Please provide a player name.")
+				return
+			end
+	
+			local Players = game:GetService("Players")
+			local RunService = game:GetService("RunService")
+			local localPlayer = Players.LocalPlayer
+			local char = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+			local hrp = char:WaitForChild("HumanoidRootPart")
+	
+			-- Find target player
+			local targetPlayer
+			for _, p in ipairs(Players:GetPlayers()) do
+				if p.Name:lower():sub(1, #playerName) == playerName:lower() then
+					targetPlayer = p
+					break
+				end
+			end
+	
+			if not targetPlayer or targetPlayer == localPlayer then
+				warn("Target not found or is yourself.")
+				return
+			end
+	
+			local targetChar = targetPlayer.Character
+			if not targetChar then
+				warn("Target has no character.")
+				return
+			end
+	
+			local head = targetChar:FindFirstChild("Head")
+			local humanoid = targetChar:FindFirstChildOfClass("Humanoid")
+			if not head or not humanoid then
+				warn("Target has no head or humanoid.")
+				return
+			end
+	
+			-- Move above target
+			hrp.CFrame = head.CFrame * CFrame.new(0, 5, 0)
+	
+			-- Temporary spin (just a few spins)
+			local bodyGyro = Instance.new("BodyGyro")
+			bodyGyro.Name = "SpinGyro"
+			bodyGyro.MaxTorque = Vector3.new(0, math.huge, 0)
+			bodyGyro.P = 1000000
+			bodyGyro.D = 0
+			bodyGyro.CFrame = hrp.CFrame
+			bodyGyro.Parent = hrp
+	
+			local totalSpin = 0
+			while totalSpin < math.pi * 4 do -- two full spins
+				bodyGyro.CFrame *= CFrame.Angles(0, math.rad(15), 0)
+				totalSpin += math.rad(15)
+				RunService.Heartbeat:Wait()
+			end
+	
+			bodyGyro:Destroy()
+	
+			-- Kill target
+			humanoid.Health = 0
+		end,
+		["serverhop"] = function()
+			local servers = {}
+			local req = game:HttpGet("https://games.roblox.com/v1/games/" .. PlaceId .. "/servers/Public?sortOrder=Desc&limit=100&excludeFullGames=true")
+			local body = HttpService:JSONDecode(req)
+	
+			if body and body.data then
+				for i, v in next, body.data do
+					if type(v) == "table" and tonumber(v.playing) and tonumber(v.maxPlayers) and v.playing < v.maxPlayers and v.id ~= JobId then
+						table.insert(servers, 1, v.id)
+					end
+				end
+			end
+	
+			if #servers > 0 then
+				TeleportService:TeleportToPlaceInstance(PlaceId, servers[math.random(1, #servers)], Players.LocalPlayer)
+			else
+				return 
+			end
+		end,
+		["freakfling"] = function()
+			local player = game.Players.LocalPlayer
+			local character = player.Character or player.CharacterAdded:Wait()
+			local hrp = character:WaitForChild("HumanoidRootPart")
+	
+			if not hrp:FindFirstChild("SpinGyro") then
+				local bodyGyro = Instance.new("BodyGyro")
+				bodyGyro.Name = "SpinGyro"
+				bodyGyro.CFrame = hrp.CFrame
+				bodyGyro.D = 0
+				bodyGyro.MaxTorque = Vector3.new(0, math.huge, 0)
+				bodyGyro.P = 999999999999999
+				bodyGyro.Parent = hrp
+	
+				-- Continuous spin
+				game:GetService("RunService").Heartbeat:Connect(function()
+					if bodyGyro.Parent ~= hrp then return end
+					bodyGyro.CFrame *= CFrame.Angles(0, math.rad(360), 0)
+				end)
+			end
+		end,
+		["unfreakfling"] = function()
+			local player = game.Players.LocalPlayer
+			local character = player.Character or player.CharacterAdded:Wait()
+			local hrp = character:FindFirstChild("HumanoidRootPart")
+	
+			if hrp then
+				local gyro = hrp:FindFirstChild("SpinGyro")
+				if gyro then
+					gyro:Destroy()
+				end
+			end
+		end,
+		["snail"] = function()
+			_G.Snail_Config = {
+				Speed = 0.4,
+				TunnelSpeed = 2,
+	
+				--// Offsets
+				Offset = CFrame.new(0,-1,0),
+				TunnelOffset = CFrame.new(0,-2,0), -- This is added to the Offset
+	
+				--// Control
+				Teleport = Enum.KeyCode.E,
+				Tunnel = Enum.KeyCode.Q,
+				ResetCamera = Enum.KeyCode.R,
+	
+				TunnelIsToggle = false,
+				DistanceChangesSpeed = true,
+				UseCameraRotaton = false, -- Old movement
+	
+				Distance = 5,
+	
+				--// Animations
+				RotationEffect = false,
+				Enabled = true, -- If disabled, the script will not run after death
+				DirtParticles = true,
+				Sounds = true,
+	
+				--// Trail Style
+				Color = ColorSequence.new{ -- Time Position, Value
+					ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 171, 3)), 
+					ColorSequenceKeypoint.new(1.00, Color3.fromRGB(132, 255, 0))
+				},
+				Transparency = NumberSequence.new{ 
+					NumberSequenceKeypoint.new(0.00, 0.40), 
+					NumberSequenceKeypoint.new(1.00, 1.00)
+				},
+				Length = 0.3, -- 0: Disabled
+	
+				--// Dirt style
+				DirtColor = ColorSequence.new{ -- Time Position, Value
+					ColorSequenceKeypoint.new(0, Color3.fromRGB(193, 135, 0)), 
+					ColorSequenceKeypoint.new(1, Color3.fromRGB(158, 84, 0))
+				},
+				DirtSize = NumberSequence.new{ 
+					NumberSequenceKeypoint.new(0, 0.2), 
+					NumberSequenceKeypoint.new(1, 0.25)
+				},
+	
+				--// Sounds
+				Audios = {
+					Teleport = {
+						SoundId = 507863457
+					},
+					Tunnel = {
+						SoundId = 9114127078,
+						Looped = true,
+						PlaybackSpeed = 1.2
+					},
+				},
+	
+				--// Misc (Advanced)
+				Max_Height = 15,
+				Root_Height = 4,
+			}
+	
+			------------------------------
+	
+			if _G.Snail_Ran then return end
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/MastersMZ-Scripts/Scripts/master/Snail%20Script/Snail%20Script%20V2.lua'))()
+		end,
+		["suicide"] = function()
+			game:GetService("Players").LocalPlayer.Character.Humanoid.Health=0
+		end,
 	}
 	
 	local function RunCommand(commandText, args)
@@ -1358,22 +1765,37 @@ local script = G2L["10"];
 		"Enables floating",
 		"Makes character invisible",
 		"Explodes your character",
+		"Makes it where you cant get banned in your server while using voicechat",
+		"Makes your player collision turn off",
+		"Makes you leave and join a different server.",
 	
-		-- 🎮 Game Control
+		-- Game Control
 		"Sets the time of day",
 		"Changes skybox lighting",
 		"Plays background music",
 		"Stops background music",
 		"Sets global gravity",
+		"(beta) Adds a backdoor into the game",
 	
-		-- 🎭 Fun / Troll
+		-- Fun / Troll
 		"Spins your character",
 		"Stops spinning your character",
 		"Makes you fall/trip",
 		"Makes you goto a player",
 		"Makes you goto a player head while sitting",
 		"Stops headsitting",
-		"Rejoins you from the server"
+		"Rejoins you from the server",
+		"Kicks anyone",
+		"Kills anyone",
+		"Flings people",
+		"Flings people in a freaky way", -- This is freakfling
+		"Stops flinging in a freaky way",
+		"Makes your head go into the ground and you can move",
+		"Grabs all parts and orbits them",
+		"Ungrabs it",
+		"balls.",
+		"Turns your player into a d*ck",
+		"Kills you",
 	}
 	
 	local ButtonName = {
@@ -1398,24 +1820,37 @@ local script = G2L["10"];
 		"float",
 		"invis",
 		"explode",
+		"antivcban",
+		"antifling",
+		"Serverhop",
 	
-		-- 🎮 Game Control
+		-- Game Control
 		"time",
 		"sky",
 		"music",
 		"stopmusic",
 		"gravity",
+		"backdoor",
 	
-		-- 🎭 Fun / Troll / Usefull
+		-- Fun / Troll
 		"spin",
 		"unspin",
 		"trip",
 		"goto",
 		"headsit",
 		"unheadsit",
-		"rejoin"
-	}
-	
+		"rejoin",
+		"kick",
+		"kill",
+		"fling",
+		"freakfling",
+		"unfreakfling",
+		"snail",
+		"d*ck", -- already have dick apparently
+		"suicide",
+		-- hello fellow humans
+		
+	}    
 	
 	
 	
@@ -1433,5 +1868,35 @@ local script = G2L["10"];
 	Button:Destroy()
 end;
 task.spawn(C_10);
+-- StarterGui.Log Admin.Main.SettingsButton.LocalScript
+local function C_12()
+local script = G2L["12"];
+	local TweenService = game:GetService("TweenService")
+	
+	local button = script.Parent
+	local frame = button.Parent.Parent.Settings
+	
+	
+	
+	local tweenInfo = TweenInfo.new(0.4, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local targetTransparency = 0.35
+	
+	button.MouseButton1Down:Connect(function()
+		local tween = TweenService:Create(frame, tweenInfo, {
+			Transparency = targetTransparency
+		})
+		tween:Play()
+	end)
+	
+end;
+task.spawn(C_12);
+-- StarterGui.Log Admin.Notif2.TextButton.LocalScript
+local function C_1c()
+local script = G2L["1c"];
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end;
+task.spawn(C_1c);
 
 return G2L["1"], require;
